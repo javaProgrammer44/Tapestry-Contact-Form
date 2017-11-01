@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter">
+<head>
+	<title>Tapestry Hotel Booking Demo - ${pageTitle}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+</head>
+<body id="homepage">
+	<div class="container bs">
+		<div class="row">
+			<ul class="topnav">
+
+			</ul>
+		</div>
+
+		<div id="top" class="row">
+
+			<h1><img src="${context:/static/tapestry_s.png}" alt="Tapestry" id="tapestry" /></h1>
+
+
+			
+			<div class="clearer"></div>
+
+		</div>
+		
+		<div id="bar" class="row">
+			<t:alerts showDismissAll="false" class="alerts"/>
+			<!--<strong>${message:nav.thisIsADemoApp}</strong>-->
+		</div>
+
+
+		<div class="row">
+			<div id="content" class="col-md-8">
+				<t:body />
+				<div class="clearer"></div>
+			</div>
+
+			<div class="col-md-4">
+			
+				<t:delegate to="sidebar" />
+			</div>
+		</div>
+
+		<div id="footer" class="row">
+			Created for Contact Form example in Tapestry using Java
+
+		</div>
+		<t:if test="symbol:tapestry.production-mode" negate="true">
+			<div class="alert alert-warning">WARNING: production mode = FALSE (performance and security consequences)</div>
+		</t:if>
+
+	</div>
+</body>
+</html>

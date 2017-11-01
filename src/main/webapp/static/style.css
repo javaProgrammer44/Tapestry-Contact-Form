@@ -1,0 +1,178 @@
+
+body {  
+	color: #333333;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #ffffff;
+	font-size:13px;	
+}
+
+h1 { margin:0px 15px; float:left; }
+h2, h3 { font-family: Georgia, serif; font-weight:normal; font-size:21px; color: #569D2F; }
+
+a { color:#569D2F; text-decoration: underline; }
+a img { text-decoration:none; }
+
+.clearer { clear:both; }
+
+.topnav { list-style: none; margin: 0 auto; text-align:right; height:30px; background:#1B181C url('top-bg.png') repeat-x top right; }
+.topnav li { color:#FFFFFF; font-weight: normal; display:inline; padding:0px 5px; margin:0px; white-space: nowrap; border-right: 1px solid #ccc;  line-height:30px; }
+.topnav li.last { border-right:0px;  }
+.topnav a { color: #ffffff; text-decoration: none;}
+.topnav span { color: #ffffff; }
+
+.bs {   	   box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+		  -moz-box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+	   -webkit-box-shadow:0px 0px 20px rgba(0,0,0,0.3); 
+}
+
+.light{ color:#999999; }
+
+#top { background: black url('scenery/1280px-Sunset_at_Lone_Pine_-_South_Australia_(Explored).png') center; }
+#footer { font-size:12px; color:#999999; text-align: center; padding: 15px 15px;}
+
+/* homepage */
+#homepage #aside { color: white; float:right; width: 15em; padding:66px 30px 0px 0px; font-size:20px; line-height:1.3em; vertical-align: text-top;}
+
+#homepage h2, #homepage h3 { margin-bottom:10px; margin-top:20px;  }
+#homepage h2.first { margin-top: 0px; }
+#homepage h2 a , #homepage h3 a { text-decoration:none; }
+
+#bar { margin:0px -15px; padding:10px; background-color: #569D2F; color:#ffffff; text-align:center; }
+#bar a { color: #ffffff; }
+
+#references { margin:10px 0px; }
+#references li { font-size: 10px; display:block; float:right; width:250px; margin:0px 10px 15px 10px; text-align:left;}
+#references img { display:block; margin-bottom:5px; padding:5px; border:1px solid #cccccc;}
+#references a { padding:0px 6px; }
+
+/* forms */
+.form-footer { background:#C9BB9B;  border:0px; border-top:1px solid #6E6D65; padding:10px; color:#6E6D65; text-align:center; margin:0px -10px -10px -10px; border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; }
+
+/* Ajax loading features */
+.loading { display: inline; width: auto; font-weight: bold; padding-right: 20px; background: transparent url(ajax-loader.gif) no-repeat right top;}
+
+/* Workspace component */
+#workspace a {float: left; overflow: hidden; margin-right: 5px; width: 220px; text-align: left;}
+#workspace li {padding: 5px 0}
+
+/* Tapestry overrides */
+TABLE.t-data-grid THEAD TR {
+	color: white;
+	background-color: #569D2F;
+}
+TABLE.t-data-grid THEAD TR TH {
+	padding: 3px;
+	white-space: nowrap;
+	border: none;
+}
+TABLE.t-data-grid TH a {
+	text-decoration: none;
+}
+TABLE.t-data-grid {
+	border: none;
+	width: 100%;
+}
+TABLE.t-data-grid TBODY TR TD {
+	border: none;
+	border-top: solid 1px;
+	padding: 5px;
+}
+DIV.t-data-grid {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+DIV.t-data-grid-pager {
+	margin: 8px 0px;
+}
+DIV.t-data-grid-pager A, DIV.t-data-grid-pager SPAN.current {
+	text-decoration: none;
+	color: black;
+	padding: 2px 5px;
+	font-size: medium;
+	border: 1px solid silver;
+	margin-right: 5px;
+}
+DIV.t-data-grid-pager A:hover {
+	border: none;
+}
+DIV.t-data-grid-pager SPAN.current {
+	color: white;
+	background-color: #569D2F;
+}
+TABLE.t-data-grid TR TH A {
+	color: white;
+}
+IMG.t-sort-icon {
+	background-color: #569D2F;
+	margin-left: 4px;
+}
+DIV.t-error {
+    border: none;
+    padding: 0px;
+    margin: 10px 0px;
+}
+DIV.t-error DIV {
+    padding: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #E93D00;
+    color: white;
+    font-weight: bold;
+}
+DIV.t-error UL {
+    margin: 10px 0px;
+    background-color: white;
+    color: #E93D00;
+}
+DIV.t-error-single {
+    padding: 10px;
+    display: block;
+    margin: 0px;
+    background-color: red;
+    color: white;
+}
+
+HTML>BODY DIV.t-error LI {
+    margin-left: 30px;
+}
+
+DIV.t-error LI {
+    margin-left: 30px;
+    list-style: square;
+}
+
+LABEL.t-error {
+    color: #E93D00;
+}
+
+INPUT.t-error, TEXTAREA.t-error, SELECT.t-error {
+    border-color: #E93D00;
+    font-style: italic;
+    color: #E93D00;
+}
+
+DIV.hint {
+	color: #960;
+}
+DIV.hint TT {
+	margin: 0 .5em;
+	font-style: italic;
+	font-weight: bold;
+}
+DIV.shoppingCart, DIV.yourBookings {
+	margin: 2em 0;
+	border: 1px solid #ccc;
+	padding: 1em;
+}
+#content DIV.shoppingCart H2, #content DIV.yourBookings H2 {
+	margin-top: 0;
+}
+
+DIV.result {
+	margin-top: 2em;
+}
+
+DIV.alerts {
+	position: absolute;
+	top: 8em;
+	left: 50em;
+}

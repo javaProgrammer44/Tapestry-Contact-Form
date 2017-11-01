@@ -1,0 +1,13 @@
+<html t:type="layout" t:pageTitle="Find a Hotel"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+	<p:sidebar>
+
+
+        <p>
+            Email sent successfully.
+        </p>
+	</p:sidebar>  
+
+</html>
