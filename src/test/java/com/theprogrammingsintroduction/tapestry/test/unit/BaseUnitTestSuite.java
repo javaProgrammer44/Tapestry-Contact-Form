@@ -28,9 +28,7 @@ public abstract class BaseUnitTestSuite
     @BeforeClass
     public void setup()
     {
-        pageTester = new PageTester("com.tap5.hotelbooking", "hotel-booking", "src/main/webapp");
 
-        registry = pageTester.getRegistry();
     }
 
     @AfterClass

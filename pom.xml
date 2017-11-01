@@ -6,7 +6,7 @@
     <artifactId>hotels</artifactId>
     <version>1.2-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>tapestry5-hotel-booking Tapestry 5 Application</name>
+    <name>Tapestry 5 Application</name>
 
     <properties>
 		<tapestry-release-version>5.4.1</tapestry-release-version>
@@ -41,11 +41,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.tapestry</groupId>
-            <artifactId>tapestry-hibernate</artifactId>
-            <version>${tapestry-release-version}</version>
-        </dependency>
 
         <!-- The tapestry-kaptcha dependency must be added explicitly -->
         <dependency>
@@ -54,18 +49,7 @@
             <version>${tapestry-release-version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.3.173</version>
-        </dependency>
 
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>4.0.2.GA</version>  <!-- 5.0.1.Final -->
-            <type>jar</type>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.tapestry</groupId>
@@ -97,19 +81,8 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>4.2.2.Final</version>
-        </dependency>
 
-		<!--
-		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.0-api</artifactId>
-			<version>1.0.0.Final</version>
-		</dependency>
-		-->
+
 		<!-- SLF4J dependency -->
 		<dependency>
   			<groupId>org.slf4j</groupId>
@@ -130,8 +103,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<encoding>UTF-8</encoding>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<optimize>true</optimize>
 				</configuration>
 			</plugin>
@@ -217,28 +190,8 @@
     </reporting>
 
     <repositories>
-        <!-- For snapshots of tynamo libraries -->
-        <!-- <repository>
-            <id>codehaus.snapshots</id>
-            <url>http://ci.repository.codehaus.org</url>
-        </repository>
-        <repository>
-            <id>apache-snapshots</id>
-            <url>http://repository.apache.org/snapshots/</url>
-        </repository>
-        <repository>
-            <id>apache</id>
-            <url>https://repository.apache.org/content/groups/public/</url>
-        </repository>
-         -->
-         <!--  for snapshots of tapestry libraries
-        <repository>
-            <id>apache-staging</id>
-            <url>https://repository.apache.org/content/groups/staging/</url>
-        </repository>
-        -->
+
     </repositories>
 
-    <!-- https://github.com/martialsauvette/tapestry5-hotel-booking/commit/d336ad8dc18a583cc6fd128162f20eb7e1679124 -->
 
 </project>
